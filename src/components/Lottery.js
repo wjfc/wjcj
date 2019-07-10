@@ -28,6 +28,8 @@ class Lottery extends Component {
     list: list
   };
   handleReady = e => {
+    const { message } = this.props;
+    const { isRolling } = message;
     if (!this.state.isRolling) {
       const { dispatch } = this.props;
       this.setState(
@@ -62,7 +64,7 @@ class Lottery extends Component {
                 // 无抽奖次数禁止抽奖
                 dispatch({
                   type: "message/saveSMessage",
-                  payload: { show_nocountMessage: true }
+                  payload: { show_nocountMessage: true, isRolling: true }
                 });
                 this.setState({
                   isRolling: false
@@ -74,16 +76,17 @@ class Lottery extends Component {
                   case "-7":
                     dispatch({
                       type: "message/saveSMessage",
-                      payload: { show_activityNotStart: true }
+                      payload: { show_activityNotStart: true, isRolling: true }
                     });
                     this.setState({
                       isRolling: false
                     });
+
                     break;
                   case "-8":
                     dispatch({
                       type: "message/saveSMessage",
-                      payload: { show_activityEnd: true }
+                      payload: { show_activityEnd: true, isRolling: true }
                     });
                     this.setState({
                       isRolling: false
@@ -232,7 +235,7 @@ class Lottery extends Component {
             className={`${styles.drawBtn} ${
               flag_scale ? styles.flag_scale : ""
             }`}
-            onTouchStart={this.handleReady}
+            onClick={this.handleReady}
           />
           <div className={styles.area}>
             <RowItem content={list[0]} activedId={activedId} />
@@ -254,6 +257,6 @@ class Lottery extends Component {
   }
 }
 
-export default connect(({ draw }) => {
-  return { draw };
+export default connect(({ draw, message }) => {
+  return { draw, message };
 })(Lottery);

@@ -8,7 +8,8 @@ import styles from "./FailureMessage.less";
 class SuccessMessage extends Component {
   componentDidMount() {}
 
-  handleCloseIcon = () => {
+  handleCloseIcon = e => {
+    e.preventDefault();
     const { dispatch } = this.props;
     // 关闭弹窗逻辑
     dispatch({
@@ -22,6 +23,7 @@ class SuccessMessage extends Component {
         show_resultMessage: false,
         show_activityNotStart: false,
         show_activityEnd: false,
+        isRolling: false,
         prizeid: ""
       }
     });
@@ -31,7 +33,7 @@ class SuccessMessage extends Component {
     const { tips1, tips2 } = this.props;
     return (
       <div className={styles.messageModel}>
-        <div className={`${styles.messageBox} animated zoomIn `}>
+        <div className={`${styles.messageBox}`}>
           <p className={styles.tips1}>{tips1}</p>
           <p className={styles.tips2}>{tips2}</p>
           <button className={styles.submitBtn} onClick={this.handleCloseIcon}>

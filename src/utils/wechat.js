@@ -27,8 +27,8 @@ var wxConfig = function(_appid, _timestamp, _nonceStr, _signature) {
   window.wx.ready(function() {
     // 微信分享的数据
     var shareData = {
-      imgUrl: "https://cloud.chsvision.com/redLottery/images/banner.png", // 分享显示的缩略图地址
-      link: "https://cloud.chsvision.com/redLottery/#/", // 分享地址
+      imgUrl: "http://wjwjj.wjcatv.com.cn/redLottery/images/banner.png", // 分享显示的缩略图地址
+      link: "http://wjwjj.wjcatv.com.cn/redLottery/#/", // 分享地址
       desc: "分享获取一次抽奖机会！", // 分享描述
       title: "看电视赢福利，当红人焕新家", // 分享标题
       success: function() {

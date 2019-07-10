@@ -9,6 +9,7 @@ export default {
     show_resultMessage: false,
     show_activityNotStart: false,
     show_activityEnd: false,
+    isRolling: false,
     prizeid: ""
   },
   subscriptions: {

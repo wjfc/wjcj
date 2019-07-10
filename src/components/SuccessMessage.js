@@ -107,6 +107,7 @@ class SuccessMessage extends Component {
           show_resultMessage: false,
           show_activityNotStart: false,
           show_activityEnd: false,
+          isRolling: false,
           prizeid: ""
         }
       });

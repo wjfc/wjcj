@@ -64,7 +64,7 @@ class IndexPage extends Component {
       });
       wechat.getConfig(
         encodeURIComponent(window.location.href.split("#")[0]),
-        "pykj_wjcj",
+        "wj_wjcj",
         dispatch
       );
     });
