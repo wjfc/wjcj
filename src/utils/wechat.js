@@ -70,7 +70,7 @@ var wxConfig = function(_appid, _timestamp, _nonceStr, _signature) {
           shareTarget: 0
         };
         shareCollect(shareobj).then(res => {
-          alert(JSON.stringify(res));
+          
         });
       }
     };

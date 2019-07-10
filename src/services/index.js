@@ -36,14 +36,6 @@ export function pvCollect(params) {
 }
 // 用户分享活动后，提交分享信息
 export function shareCollect(params) {
-  // payload: {
-  //   terminaltype,
-  //   eventid,
-  //   userType: customertype,
-  //   url: window.location.href,
-  //   userValue: userid,
-  //   shareTarget:0
-  // }
   return request(`/interface/shareCollect?${stringify(params)}`);
 }
 // 获取微信公众号相关
