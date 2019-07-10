@@ -69,8 +69,9 @@ class Lottery extends Component {
                 });
                 return false;
               } else {
-                switch (1) {
-                  case -7:
+                const { errorcode } = res;
+                switch (errorcode) {
+                  case "-7":
                     dispatch({
                       type: "message/saveSMessage",
                       payload: { show_activityNotStart: true }
@@ -79,7 +80,7 @@ class Lottery extends Component {
                       isRolling: false
                     });
                     break;
-                  case -8:
+                  case "-8":
                     dispatch({
                       type: "message/saveSMessage",
                       payload: { show_activityEnd: true }
@@ -88,7 +89,7 @@ class Lottery extends Component {
                       isRolling: false
                     });
                     break;
-                  default:
+                  case "0":
                     //抽奖之后刷新次数。
                     this.handlePlay(res);
                     // 获取剩余抽奖次数

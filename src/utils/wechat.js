@@ -69,9 +69,7 @@ var wxConfig = function(_appid, _timestamp, _nonceStr, _signature) {
           userValue: userid,
           shareTarget: 0
         };
-        shareCollect(shareobj).then(res => {
-          
-        });
+        shareCollect(shareobj).then(res => {});
       }
     };
     window.wx.onMenuShareTimeline(shareData);

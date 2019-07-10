@@ -1,5 +1,5 @@
 export const terminaltype = "Mobile";
-export const customertype = 3;
+export const customertype = 4;
 export const eventid = 731;
 export const list = [
   {
