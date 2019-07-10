@@ -1,0 +1,51 @@
+Arguments: 
+  D:\soft\node\node.exe D:\node_g_modules\node_modules\yarn\bin\yarn.js add qs
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Program Files\Intel\WiFi\bin\;c:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Git\cmd;D:\node_g_modules;D:\soft\cmder\cmder;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\OpenVPN\bin;d:\Program Files\Microsoft VS Code\bin;D:\Java\bin;D:\soft\node\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;D:\Java\bin;D:\soft\adb\android-sdks\platform-tools;C:\Program Files\MySQL\MySQL Server 5.5\bin;d:\Program Files\Microsoft VS Code\bin;D:\soft\Fiddler;C:\Users\HP\AppData\Roaming\npm;D:\soft\node
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\HP\AppData\Local\Yarn\Cache\v4\npm-ms-2.0.0-5608aeadfc00be6c2901df5f9861788de0d597c8\node_modules\ms\package.json' -> 'D:\上海澄视code\吴江\代码\Mobile\吴江红人抽奖\prize-draw\draw\node_modules\af-webpack\node_modules\sockjs-client\node_modules\ms\package.json'
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "dva": "^2.4.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0"
+    },
+    "devDependencies": {
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "eslint": "^4.14.0",
+      "eslint-config-umi": "^0.1.1",
+      "eslint-plugin-flowtype": "^2.34.1",
+      "eslint-plugin-import": "^2.6.0",
+      "eslint-plugin-jsx-a11y": "^5.1.1",
+      "eslint-plugin-react": "^7.1.0",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^2.5.0-beta.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,64 @@
+.recordContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/record/recordBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .recordBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0.3rem;
+  }
+
+  .recordMenu {
+    display: flex;
+    margin-top: 3.62rem;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.33rem;
+    color: #666;
+
+    .precent40 {
+      width: 40%;
+    }
+
+    .precent60 {
+      width: 60%;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .recordList {
+    position: absolute;
+    top: 4.68rem;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.23rem;
+    line-height: 1rem;
+    color: #666;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .recordItem {
+      display: flex;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+
+      .precent40 {
+        width: 40%;
+      }
+
+      .precent60 {
+        width: 60%;
+      }
+    }
+  }
+}
