@@ -11,7 +11,7 @@ function withFailureMessage(component, data) {
   return NewComponent;
 }
 const Result = withFailureMessage(FailureMessage, {
-  tips1: "今日已增加过机会了",
-  tips2: "每个微信号每天可增加一次机会!"
+  tips1: "明天再来试试吧~",
+  tips2: "每个微信号每天只可增加1次机会!"
 });
 export default Result;

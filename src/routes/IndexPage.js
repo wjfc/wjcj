@@ -107,7 +107,7 @@ class IndexPage extends Component {
         {show_failureMessage && (
           <FailureMessage
             tips1="好遗憾 就差一点点"
-            tips2="转发至微信朋友圈可增加一次抽奖机会"
+            tips2="转发至微信朋友圈每天可增加一次机会"
           />
         )}
         {show_netErrorMessage && <NeterrorMessage />}
